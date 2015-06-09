@@ -1,20 +1,13 @@
 /*Custom CSS*/
 
+body {
+  margin-top: 15px;
+}
+
 /* Header Navigation */
 
-
-/*body {
-  margin-top: 50px;
-
-}*/
-
-
-
-
-
-
 .navbar-collapse {
-   padding-left: 20px;//changed from 0px 
+   //padding-left: 20px; changed from 0px 
 }
 
 /*Floating navbar left*/
@@ -25,9 +18,10 @@
     border-top: 0;
     box-shadow: none;
     max-height: none;
-    padding-left:0;
+    padding-left: 0;
     padding-right:0;
   }
+
   .navbar-collapse.collapse {
     display: block !important;
     width: auto !important;
@@ -38,31 +32,30 @@
     overflow-x: visible;
   }
 
-.navbar
-{
+  .navbar
+  {
 
   width: 16.67%;
   height: 100%;
   margin-right: 0;
   margin-left: 0;
-} 
+  } 
 
-.navbar-nav,
-.navbar-nav > li,
-.navbar-left,
-.navbar-right,
-.navbar-header
-{float:none !important;}
+  .navbar-nav,
+  .navbar-nav > li,
+  .navbar-left,
+  .navbar-right,
+  .navbar-header
+  {float:none !important;}
 
-.navbar-right .dropdown-menu {left:0;right:auto;}
-.navbar-collapse .navbar-nav.navbar-right:last-child {
+  .navbar-right .dropdown-menu {left:0;right:auto;}
+  .navbar-collapse .navbar-nav.navbar-right:last-child {
     margin-right: 0;
+  }
 }
-}
-
+/* END left navbar */
 
 /*navbar-brand image*/
-
 .cust-size {
   /* Margin/padding copied from Bootstrap */
   margin-left: auto;
@@ -74,19 +67,9 @@
   max-width: 135px;
   
 }
+/* END navbar-brand image */
 
-
-
-
-
-
-
-
-
-
-/** Header Navigation**/
-
-
+/** Header Navigation **/
 
 header .navbar-default {
 background-color: red;
@@ -102,12 +85,22 @@ header .navbar-default .navbar-nav a:hover {
 color: #DA7120;
 }
 
-
-
 header .navbar-default .navbar-nav .active a { //for home button
-font-weight: 700;
+font-weight: 400;
+padding-top: 5px;
+padding-bottom: 5px;
 color: #2956A7;
 background: blue;
+border-bottom: 4px solid #B2481E;
+text-shadow: none;
+}
+
+header .navbar-default .navbar-nav li a { //for All buttons
+font-weight: 400;
+padding-top: 5px;
+padding-bottom: 5px;
+color: #2956A7;
+background: yellow;
 border-bottom: 4px solid #B2481E;
 text-shadow: none;
 }
@@ -118,30 +111,23 @@ header .navbar-default .navbar-nav .active a:hover {
   
 }
 
-
-
 /** 10 column width for all primary content**/
 
 .ten-column-width {
   width: 83.3%;
-
-}
-
-.cust-padding-left {
-  
-  
-  padding-right: 15px;
-  padding-left: 15px; 
-}
-
-.cust-padding-super-right {
-  padding-right: 120px;
 }
 
 .footer {
   padding-left: 16.67%;
   //width: 83.3%;
   border: 2px solid purple;
+}
+
+/* Push down */
+
+.push-down {
+  
+  padding-top: 50px;
 }
 
 /*For custom bottons*/
