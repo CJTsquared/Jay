@@ -1,10 +1,11 @@
 /*Custom CSS*/
 
+
 body {
   margin-top: 15px;
 }
 
-/* Header Navigation */
+/* Header Navigation */ 
 
 .navbar-collapse {
    //padding-left: 20px; changed from 0px 
@@ -64,7 +65,7 @@ body {
   padding-right: 0px; //30px is good
 
   /* Set width to your desired site width */
-  max-width: 135px;
+  max-width: 120px; //was 135px
   
 }
 /* END navbar-brand image */
@@ -72,8 +73,8 @@ body {
 /** Header Navigation **/
 
 header .navbar-default {
-background-color: red;
-border: 2px solid black; 
+background-color: transparent;
+border-right: 2px solid black; 
 }
 
 header .navbar-default .navbar-nav a {
@@ -89,8 +90,8 @@ header .navbar-default .navbar-nav .active a { //for home button
 font-weight: 400;
 padding-top: 5px;
 padding-bottom: 5px;
-color: #2956A7;
-background: blue;
+color: #141466;
+background: #B3B3FF;
 border-bottom: 4px solid #B2481E;
 text-shadow: none;
 }
@@ -99,17 +100,22 @@ header .navbar-default .navbar-nav li a { //for All buttons
 font-weight: 400;
 padding-top: 5px;
 padding-bottom: 5px;
-color: #2956A7;
-background: yellow;
+color: white;
+background: #2956A7;
 border-bottom: 4px solid #B2481E;
 text-shadow: none;
 }
 
 header .navbar-default .navbar-nav .active a:hover {
-  color: pink;
-  background: transparent;
+  color: white;
+  background: #0000B3;
   
 }
+
+
+/*header .navbar-default .navbar-nav {
+  height: 200px;
+}*/
 
 /** 10 column width for all primary content**/
 
@@ -123,12 +129,21 @@ header .navbar-default .navbar-nav .active a:hover {
   border: 2px solid purple;
 }
 
-/* Push down */
-
-.push-down {
-  
-  padding-top: 50px;
+/* Push down for the nav bar links */
+header .navbar-default .navbar-header {  
+  margin-top: 50px;
 }
+
+
+/*My services stuff*/
+
+body .service-border {
+  border-top: 5px solid blue;
+  border-bottom: 5px solid blue;
+
+}
+
+
 
 /*For custom bottons*/
 
