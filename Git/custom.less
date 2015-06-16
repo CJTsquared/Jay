@@ -63,6 +63,7 @@ body {
   margin-right: auto;
   padding-left: 0px;
   padding-right: 0px; //30px is good
+  //marigin-top: 50px;
 
   /* Set width to your desired site width */
   max-width: 120px; //was 135px
@@ -114,7 +115,7 @@ header .navbar-default .navbar-nav .active a:hover {
 
 
 /*header .navbar-default .navbar-nav {
-  height: 200px;
+  //height: 200px;
 }*/
 
 /** 10 column width for all primary content**/
@@ -131,7 +132,7 @@ header .navbar-default .navbar-nav .active a:hover {
 
 /* Push down for the nav bar links */
 header .navbar-default .navbar-header {  
-  margin-top: 50px;
+  //margin-top: 50px;
 }
 
 
@@ -143,8 +144,45 @@ body .service-border {
 
 }
 
+
+/*Push down for navbar*/
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    height: 0;
+    }
+ 
+.clearfix { 
+   *display: inline-block; 
+   _height: 1%;
+}
+
 /* Making the button dark */
 
+#pushdown{
+  padding-bottom: 50px;
+}
+
+/*placeing the icon in the "http" in this case "file" part of the url doesn't work*/
+
+a[href^="file"] {
+   background: url("../images/brand.jpg") no-repeat;
+   padding-left: 10px;
+}
+
+/*Paragraph*/
+
+p::first-letter {
+   float: left;
+   font-size: 2em;
+   font-weight: bold;
+   font-family: cursive;
+   padding-right: 2px;
+}
 
 
 /*For custom bottons*/
